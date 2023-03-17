@@ -363,15 +363,14 @@
 
 .text-bold{
   display: flex;
-  justify-content: center;
-  
+  justify-content: center;  
   margin: var(--div-margin);
   padding: var(--div-padding);          /*bold text formation*/
-  max-width: 30vw;
-  min-width: 30vh;
+  width: 100%;
   font-size: larger;
   font-weight: bold;
   animation: myfirst 3s;
+ 
 }
 
 @keyframes myfirst{
@@ -385,7 +384,7 @@
 
 .text-normal{
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   padding: var(--div-padding);   
   margin: var(--div-margin);  
