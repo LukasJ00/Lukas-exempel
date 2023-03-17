@@ -279,6 +279,126 @@
     box-shadow: 10px 10px 30px var(--clr-shadow);
   
 }        */
+
+
+/*gallery*/
+.gallery{
+  display: grid;
+  width: 100%;
+  padding:var(--div-padding);
+  grid-template-columns: repeat(2, 1fr);  /*grid gallery columns*/
+  grid-gap: 1rem;
+  align-items: center;
+  margin:var(--div-margin);  
+   
+}
+
+.gallery-item{
+   
+    justify-content: center;      /*gallery layout*/ 
+    grid-auto-flow: column;      
+    }
+
+  img,picture{
+      max-width: 100%;            /*bilder*/ 
+      height: auto;
+      display: block;
+      border-radius: 2rem;
+    }
+
+.img-gallery{
+ 
+  width: 100%;   
+  height: auto;
+  object-fit: cover;        /*bilder gallery layout*/
+  justify-content: center;
+  object-position: center;
+  position: relative;
+  }
+  
+  
+
+  @media (max-width: 991px){
+    .gallery-item{
+      padding-left: 0;
+    }
+  }
+  @media (max-width: 768px ){    /*media breakponint mobil gallery*/
+     .row-1{
+      display: grid;
+      place-items: center;
+      width: 90%;
+      grid-template-columns: 1fr;
+      grid-gap: 1rem;
+      justify-content: center;
+    }
+  }
+
+.gallery-text{
+    display: flex;
+    justify-content: left;
+    padding: var(--div-padding);     
+    max-width: 40rem;             /*gallery text box*/
+    border-radius: .5rem;
+    box-shadow: 10px 10px 30px var(--clr-shadow);
+  
+}       
+
+
+/*info sida*/
+.container{
+  margin-top: 4rem;
+  width: 100%;
+  padding:var(--div-padding);
+  align-items: center;
+  margin: 1rem;  
+}
+
+.porträtt{
+  grid-gap:2em;
+  border-radius: 2rem;         /*profilbild layout*/
+  border-radius: .5rem;
+}
+
+
+.text-bold{
+  display: flex;
+  justify-content: center;
+  
+  margin: var(--div-margin);
+  padding: var(--div-padding);          /*bold text formation*/
+  max-width: 30vw;
+  min-width: 30vh;
+  font-size: larger;
+  font-weight: bold;
+  animation: myfirst 3s;
+}
+
+@keyframes myfirst{
+  0%{
+    transform: rotate(0deg);      /*animation snurra*/
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+  }
+
+.text-normal{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: var(--div-padding);   
+  margin: var(--div-margin);  
+  max-width: 40rem;             /*info text box*/
+ border-radius: .5rem;
+  box-shadow: 10px 10px 30px var(--clr-shadow);
+}
+
+
+
+
+
+
 /*info sida*/
 .info{
     display: grid;
